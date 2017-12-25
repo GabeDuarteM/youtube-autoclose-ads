@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Auto-close Ads",
+  "version": "1.0",
+  "description": "Automatically close ads on youtube videos after an amount of seconds.",
+  "author": "Gabriel Duarte",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "homepage_url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads/tree/master",
+  "permissions": ["*://*.youtube.com/*", "tabs"]
+}
