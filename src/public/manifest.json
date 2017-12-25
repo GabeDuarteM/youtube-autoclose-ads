@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["script.js"],
+      "js": ["youtube-autoclose-ads.js"],
       "run_at": "document_end"
     }
   ],
