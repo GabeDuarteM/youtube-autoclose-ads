@@ -5,7 +5,14 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build:clean && concurrently 'yarn build:copy-public -w' 'parcel' --kill-others",
-    "build": "yarn build:clean && yarn build:parcel && yarn build:copy-public",
+    "lint": "yarn lint:typescript && yarn lint:prettier",
+    "lint:fix": "yarn lint:typescript:fix && yarn lint:prettier:fix",
+    "lint:typescript": "tslint 'src/**/*.ts' --project tsconfig.json",
+    "lint:typescript:fix": "yarn lint:typescript --fix",
+    "lint:prettier": "prettier -l \"src/**/*.ts\"",
+    "lint:prettier:fix": "yarn lint:prettier --write",
+    "build": "yarn build:clean && yarn build:copy-public && yarn build:parcel",
+    "build:ci": "yarn lint && yarn build",
     "build:clean": "rimraf dist",
     "build:parcel": "parcel build",
     "build:copy-public": "cpx 'src/public/*' dist"
