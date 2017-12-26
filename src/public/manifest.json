@@ -16,6 +16,6 @@
     "48": "icon48.png",
    "128": "icon128.png" 
   },
-  "homepage_url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads/tree/master",
+  "homepage_url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads",
   "permissions": ["*://*.youtube.com/*", "tabs"]
 }
