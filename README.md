@@ -1,6 +1,9 @@
 # Youtube Autoclose Ads
 Chrome extension to automatically close youtube ads after an amount of time (default: 5 seconds)
 
+## Download
+This extension is available on the [Chrome Webstore](https://chrome.google.com/webstore/detail/youtube-autoclose-ads/mppjhhbajcciljocgbadbhbgphjfdmhj).
+
 ## Why not just use a normal ad-block?
 
 An ad-block completly removes all sorts of ads on youtube, making the video creator not get any money with monetization. 
