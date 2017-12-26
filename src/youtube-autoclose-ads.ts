@@ -1,4 +1,6 @@
 let adFound: boolean = false
+let videoAdFound: boolean = false
+let shouldCloseVideoAd: boolean = false
 setInterval(() => {
   chrome.storage.sync.get(
     {
@@ -8,6 +10,8 @@ setInterval(() => {
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
       const adClose: HTMLElement | null = document.querySelector(".adDisplay .close-button")
       const videoAdClose: HTMLElement | null = document.querySelector(".videoAdUiSkipButton")
+      const videoAdDisplayed: boolean = !!document.querySelector(".videoAdUiPreSkipButton")
+
       if (adClose && !adFound) {
         setTimeout(() => {
           adClose.click()
@@ -15,8 +19,19 @@ setInterval(() => {
         }, normalAdWaitSeconds)
         adFound = true
       }
-      if (videoAdClose) {
+
+      if (videoAdDisplayed && !videoAdFound) {
+        setTimeout(() => {
+          shouldCloseVideoAd = true
+        }, videoAdWaitSeconds)
+
+        videoAdFound = true
+      }
+
+      if (videoAdClose && shouldCloseVideoAd) {
         videoAdClose.click()
+        shouldCloseVideoAd = false
+        videoAdFound = false
       }
     },
   )
