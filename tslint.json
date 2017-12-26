@@ -1,5 +1,5 @@
 {
-  "extends": "tslint:recommended",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rules": {
     "no-unnecessary-type-assertion": true,
     "await-promise": true,

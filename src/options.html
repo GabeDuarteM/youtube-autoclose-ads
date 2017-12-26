@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube Autoclose Ads Options</title>
+  <style>
+    body {
+      padding: 10px;
+    }
+
+    input {
+      width: 55px
+    }
+
+    span#status {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    div.option {
+      margin: 8px 0
+    }
+
+    div.option:first-of-type {
+      margin-top: 0;
+    }
+
+    div.option:last-of-type {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="option">
+    Wait
+    <input type="number" id="normalAdWaitSeconds" min="0" max="9999" /> second(s) before closing a normal ad.
+  </div>
+
+  <div class="option">
+    Wait
+    <input type="number" id="videoAdWaitSeconds" min="5" max="9999" /> second(s) before closing a video ad.
+  </div>
+  <span id="status">&nbsp;</span>
+  <button id="save">Save</button>
+
+  <script src="options.ts"></script>
+</body>
+
+</html>
