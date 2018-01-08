@@ -1,4 +1,5 @@
 # Youtube Autoclose Ads
+
 [![Travis](https://img.shields.io/travis/GabrielDuarteM/youtube-autoclose-ads/master.svg)](https://travis-ci.org/GabrielDuarteM/youtube-autoclose-ads)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
