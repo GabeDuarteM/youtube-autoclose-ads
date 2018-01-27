@@ -18,7 +18,7 @@
     "build:copy-public": "cpx 'src/public/*' dist"
   },
   "dependencies": {
-    "@types/chrome": "^0.0.58",
+    "@types/chrome": "^0.0.59",
     "@types/node": "^9.3.0",
     "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
