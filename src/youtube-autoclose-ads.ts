@@ -8,7 +8,7 @@ setInterval(() => {
       videoAdWaitSeconds: 5,
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
-      const adClose: HTMLElement | null = document.querySelector(".adDisplay .close-button")
+      const adClose: HTMLElement | null = document.querySelector(".adDisplay .close-padding")
       const videoAdClose: HTMLElement | null = document.querySelector(".videoAdUiSkipButton")
       const videoAdDisplayed: boolean = !!document.querySelector(".videoAdUiPreSkipButton")
 
