@@ -4,10 +4,10 @@
   "main": "src/youtube-autoclose-ads.ts",
   "license": "MIT",
   "scripts": {
-    "start": "yarn build:clean && concurrently 'yarn build:copy-public -w' 'parcel' 'parcel src/options.html --public-url ./ --port 34755' --kill-others",
+    "start": "yarn build:clean && concurrently \"yarn build:copy-public -w\" \"parcel\" \"parcel src/options.html --public-url ./ --port 34755\" --kill-others",
     "lint": "yarn lint:typescript && yarn lint:prettier",
     "lint:fix": "yarn lint:typescript:fix && yarn lint:prettier:fix",
-    "lint:typescript": "tslint 'src/**/*.ts' --project tsconfig.json",
+    "lint:typescript": "tslint \"src/**/*.ts\" --project tsconfig.json",
     "lint:typescript:fix": "yarn lint:typescript --fix",
     "lint:prettier": "prettier -l \"src/**/*.ts\"",
     "lint:prettier:fix": "yarn lint:prettier --write",
@@ -15,7 +15,7 @@
     "build:ci": "yarn lint && yarn build",
     "build:clean": "rimraf dist",
     "build:parcel": "parcel build && parcel build src/options.html --public-url ./",
-    "build:copy-public": "cpx 'src/public/*' dist"
+    "build:copy-public": "cpx \"src/public/*\" dist"
   },
   "dependencies": {
     "@types/chrome": "^0.0.58",
