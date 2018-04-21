@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "src/youtube-autoclose-ads.ts",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads.git"
+  },
   "scripts": {
     "start": "yarn build:clean && concurrently \"yarn build:copy-public -w\" \"parcel\" \"parcel src/options.html --public-url ./ --port 34755\" --kill-others",
     "lint": "yarn lint:typescript && yarn lint:prettier",
@@ -14,19 +18,22 @@
     "build": "yarn build:clean && yarn build:copy-public && yarn build:parcel",
     "build:ci": "yarn lint && yarn build",
     "build:clean": "rimraf dist",
-    "build:parcel": "parcel build && parcel build src/options.html --public-url ./",
+    "build:parcel": "parcel build src/youtube-autoclose-ads.ts --out-file youtube-autoclose-ads.js && parcel build src/options.html --public-url ./",
     "build:copy-public": "cpx \"src/public/*\" dist"
   },
   "dependencies": {
     "@types/chrome": "^0.0.64",
-    "@types/node": "^9.3.0",
+    "@types/node": "^9.6.6",
     "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
     "parcel-bundler": "^1.7.1",
     "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
     "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.10.0",
-    "typescript": "^2.8.1"
+    "tslint-config-prettier": "^1.12.0",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.1.7"
   }
 }
