@@ -1,7 +1,5 @@
-
 {
-    "semi": false,
-    "printWidth": 120,
-    "trailingComma": "all",
-    "parser": "typescript"
+  "semi": false,
+  "printWidth": 120,
+  "trailingComma": "all"
 }
