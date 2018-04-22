@@ -19,7 +19,8 @@
     "build:ci": "yarn lint && yarn build",
     "build:clean": "rimraf dist",
     "build:parcel": "parcel build src/youtube-autoclose-ads.ts --out-file youtube-autoclose-ads && parcel build src/options.html --public-url ./",
-    "build:copy-public": "cpx \"src/public/*\" dist"
+    "build:copy-public": "cpx \"src/public/*\" dist",
+    "release": "semantic-release"
   },
   "dependencies": {
     "@types/chrome": "^0.0.64",

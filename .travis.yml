@@ -3,5 +3,5 @@ node_js:
   - node
 script:
   - yarn build:ci
-os:
-  - linux
+after_success:
+  - yarn release
