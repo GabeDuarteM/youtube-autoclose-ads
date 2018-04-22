@@ -1,6 +1,6 @@
 {
   "name": "youtube-autoclose-ads",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "src/youtube-autoclose-ads.ts",
   "license": "MIT",
   "repository": {
@@ -18,7 +18,7 @@
     "build": "yarn build:clean && yarn build:copy-public && yarn build:parcel",
     "build:ci": "yarn lint && yarn build",
     "build:clean": "rimraf dist",
-    "build:parcel": "parcel build src/youtube-autoclose-ads.ts --out-file youtube-autoclose-ads.js && parcel build src/options.html --public-url ./",
+    "build:parcel": "parcel build src/youtube-autoclose-ads.ts --out-file youtube-autoclose-ads && parcel build src/options.html --public-url ./",
     "build:copy-public": "cpx \"src/public/*\" dist"
   },
   "dependencies": {
