@@ -34,6 +34,7 @@
     "typescript": "^2.8.3"
   },
   "devDependencies": {
-    "semantic-release": "^15.1.7"
+    "semantic-release": "^15.1.7",
+    "semantic-release-chrome": "^1.0.0"
   }
 }
