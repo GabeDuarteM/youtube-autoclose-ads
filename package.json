@@ -23,7 +23,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "@types/chrome": "^0.0.64",
+    "@types/chrome": "^0.0.65",
     "@types/node": "^9.6.6",
     "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
