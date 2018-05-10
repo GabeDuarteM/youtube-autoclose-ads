@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@types/chrome": "^0.0.64",
-    "@types/node": "^9.6.6",
+    "@types/node": "^10.0.7",
     "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
     "parcel-bundler": "^1.7.1",
