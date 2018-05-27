@@ -8,7 +8,7 @@ setInterval(() => {
       videoAdWaitSeconds: 5,
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
-      const adClose: HTMLElement | null = document.querySelector(".adDisplay .close-padding")
+      const adClose: HTMLElement | null = document.querySelector(".video-ads .ytp-ad-overlay-close-button")
       const videoAdClose: HTMLElement | null = document.querySelector(".videoAdUiSkipButton")
       const videoAdDisplayed: boolean = !!document.querySelector(".videoAdUiPreSkipButton")
 
