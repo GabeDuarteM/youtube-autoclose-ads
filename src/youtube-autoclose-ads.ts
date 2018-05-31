@@ -9,7 +9,7 @@ setInterval(() => {
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
       const adClose: HTMLElement | null = document.querySelector(".video-ads .ytp-ad-overlay-close-button")
-      const videoAdClose: HTMLElement | null = document.querySelector('.video-ads .ytp-button')
+      const videoAdClose: HTMLElement | null = document.querySelector(".video-ads .ytp-button")
       const videoAdDisplayed: boolean = !!document.querySelector(".ytp-ad-player-overlay-skip-or-preview")
 
       if (adClose && !adFound) {
