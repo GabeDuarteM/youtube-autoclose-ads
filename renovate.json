@@ -1,4 +1,5 @@
 {
   "extends": ["config:base"],
-  "ignoreDeps": ["@types/chrome", "@types/node"]
+  "ignoreDeps": ["@types/chrome", "@types/node"],
+  "rangeStrategy": "bump"
 }
