@@ -36,7 +36,7 @@
     "@types/node": "^10.1.2",
     "concurrently": "^3.5.1",
     "cpx": "^1.5.0",
-    "prettier": "^1.12.1",
+    "prettier": "^1.14.2",
     "rimraf": "^2.6.2",
     "semantic-release": "^15.5.0",
     "semantic-release-chrome": "^1.0.1",
