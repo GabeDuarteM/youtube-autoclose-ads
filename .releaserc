@@ -3,7 +3,8 @@
   "prepare": [
     {
       "path": "semantic-release-chrome",
-      "asset": "youtube-autoclose-ads.zip"
+      "asset": "youtube-autoclose-ads.zip",
+      "distFolder": "build"
     }
   ],
   "publish": [
