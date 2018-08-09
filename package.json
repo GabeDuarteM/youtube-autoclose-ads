@@ -12,6 +12,7 @@
     "lint": "gd-scripts lint",
     "type-check": "gd-scripts type-check",
     "build": "gd-scripts build",
+    "postbuild": "rimraf build/**/*.xcf",
     "ci": "gd-scripts ci",
     "release": "semantic-release"
   },
@@ -25,6 +26,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "gd-scripts": "^1.0.2",
     "prettier": "^1.14.2",
+    "rimraf": "^2.6.2",
     "semantic-release": "^15.9.6",
     "semantic-release-chrome": "^1.0.1"
   }
