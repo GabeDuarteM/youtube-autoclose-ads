@@ -4,8 +4,8 @@ let shouldCloseVideoAd: boolean = false
 setInterval(() => {
   chrome.storage.sync.get(
     {
-      normalAdWaitSeconds: 5,
-      videoAdWaitSeconds: 5,
+      normalAdWaitSeconds: 5000,
+      videoAdWaitSeconds: 5000,
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
       const adClose: HTMLElement | null = document.querySelector(
