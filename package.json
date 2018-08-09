@@ -8,40 +8,24 @@
     "url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads.git"
   },
   "scripts": {
-    "start": "yarn build:clean && concurrently \"yarn build:copy:public -w\" \"yarn build:babel -w\" \"yarn build:tsc -w\" \"yarn build:copy:html -w\" --kill-others",
-    "lint": "yarn lint:typescript && yarn lint:prettier",
-    "lint:fix": "yarn lint:typescript:fix && yarn lint:prettier:fix",
-    "lint:typescript": "tslint \"src/**/*.ts\" --project tsconfig.json",
-    "lint:typescript:fix": "yarn lint:typescript --fix",
-    "lint:prettier": "prettier -l \"src/**/*.ts\"",
-    "lint:prettier:fix": "yarn lint:prettier --write",
-    "type-check": "tsc --noEmit",
-    "build": "yarn build:clean && yarn build:copy:public && yarn build:copy:html && yarn build:babel && yarn build:tsc",
-    "build:ci": "yarn lint && yarn build",
-    "build:clean": "rimraf dist",
-    "build:babel": "babel src --out-dir dist --extensions \".ts\"",
-    "build:tsc": "tsc --emitDeclarationOnly",
-    "build:copy:html": "cpx \"src/**/*.html\" dist",
-    "build:copy:public": "cpx \"src/public/*\" dist",
+    "start": "gd-scripts start",
+    "lint": "gd-scripts lint",
+    "type-check": "gd-scripts type-check",
+    "build": "gd-scripts build",
+    "ci": "gd-scripts ci",
     "release": "semantic-release"
   },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.51",
-    "@babel/core": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "@babel/preset-typescript": "^7.0.0-beta.51",
     "@types/chrome": "^0.0.66",
     "@types/node": "^10.1.2",
-    "concurrently": "^3.5.1",
-    "cpx": "^1.5.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "gd-scripts": "^1.0.2",
     "prettier": "^1.12.1",
-    "rimraf": "^2.6.2",
     "semantic-release": "^15.5.0",
-    "semantic-release-chrome": "^1.0.1",
-    "tslint": "^5.10.0",
-    "tslint-config-prettier": "^1.13.0",
-    "typescript": "^2.8.3"
+    "semantic-release-chrome": "^1.0.1"
   }
 }

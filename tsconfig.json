@@ -1,13 +1,6 @@
 {
+  "extends": "./node_modules/gd-scripts/build/config/tsconfig.json",
   "compilerOptions": {
-    "declaration": true,
-    "outDir": "dist",
-    "sourceMap": true,
-    "strict": true,
-    "module": "commonjs",
-    "target": "esnext",
-    "moduleResolution": "node",
-    "lib": ["esnext", "dom"]
-  },
-  "include": ["./src/"]
+    "lib": ["dom", "esnext"]
+  }
 }
