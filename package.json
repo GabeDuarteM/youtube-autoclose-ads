@@ -20,7 +20,7 @@
     "babel-core": "^7.0.0-bridge.0"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.71",
+    "@types/chrome": "^0.0.72",
     "@types/node": "^10.5.7",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.2",
