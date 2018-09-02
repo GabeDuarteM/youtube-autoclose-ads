@@ -1,12 +1,10 @@
 {
   "name": "youtube-autoclose-ads",
   "version": "0.0.0-development",
-  "main": "src/youtube-autoclose-ads.ts",
+  "author": "Gabriel Duarte (https://www.gabrielduarte.tech)",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads.git"
-  },
+  "description": "An extension to automatically close youtube ads after a certain amount of time",
+  "main": "src/youtube-autoclose-ads.ts",
   "scripts": {
     "start": "gd-scripts start",
     "lint": "gd-scripts lint",
@@ -16,12 +14,30 @@
     "ci": "gd-scripts ci",
     "release": "semantic-release"
   },
-  "resolutions": {
-    "babel-core": "^7.0.0-bridge.0"
+  "keywords": [
+    "chrome",
+    "chrome extension",
+    "youtube",
+    "ads",
+    "advertisement",
+    "ad",
+    "automation",
+    "automate",
+    "close",
+    "youtube-autoclose-ads"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads.git"
   },
+  "bugs": {
+    "url": "https://github.com/GabrielDuarteM/youtube-autoclose-ads/issues"
+  },
+  "homepage": "https://github.com/GabrielDuarteM/youtube-autoclose-ads#readme",
   "devDependencies": {
     "@types/chrome": "0.0.72",
     "@types/node": "^10.5.7",
+    "babel-core": "^7.0.0-bridge.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-prettier": "^2.6.2",
     "gd-scripts": "^1.0.2",
