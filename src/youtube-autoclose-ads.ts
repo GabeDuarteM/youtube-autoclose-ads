@@ -9,12 +9,14 @@ setInterval(() => {
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
       const adClose: HTMLElement | null = document.querySelector(
-        ".video-ads .close-padding",
+        ".ytp-ad-overlay-close-container .ytp-ad-overlay-close-button",
       )
       const videoAdClose: HTMLElement | null = document.querySelector(
-        ".videoAdUi .videoAdUiSkipButton",
+        ".ytp-ad-skip-button-container .ytp-ad-skip-button",
       )
-      const videoAdDisplayed: boolean = !!document.querySelector(".videoAdUi")
+      const videoAdDisplayed: boolean = !!document.querySelector(
+        ".ytp-ad-skip-button-container",
+      )
 
       if (adClose && !adFound) {
         setTimeout(() => {
