@@ -59,7 +59,7 @@ MIT
 [version-badge]: https://img.shields.io/chrome-web-store/v/mppjhhbajcciljocgbadbhbgphjfdmhj.svg?style=flat-square
 [package]: https://chrome.google.com/webstore/detail/youtube-autoclose-ads/mppjhhbajcciljocgbadbhbgphjfdmhj
 [downloads-badge]: https://img.shields.io/chrome-web-store/users/mppjhhbajcciljocgbadbhbgphjfdmhj.svg?style=flat-square
-[license-badge]: https://img.shields.io/npm/l/youtube-autoclose-ads.svg?style=flat-square
+[license-badge]: https://img.shields.io/github/license/GabrielDuarteM/youtube-autoclose-ads.svg?style=flat-square
 [license]: https://github.com/GabrielDuarteM/youtube-autoclose-ads/blob/master/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
