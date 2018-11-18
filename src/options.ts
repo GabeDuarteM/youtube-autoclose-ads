@@ -1,9 +1,9 @@
 const saveOptions = () => {
   const normalAdWaitSeconds: string = (document.getElementById(
-    "normalAdWaitSeconds",
+    'normalAdWaitSeconds',
   ) as HTMLInputElement).value
   const videoAdWaitSeconds: string = (document.getElementById(
-    "videoAdWaitSeconds",
+    'videoAdWaitSeconds',
   ) as HTMLInputElement).value
   chrome.storage.sync.set(
     {
@@ -11,10 +11,10 @@ const saveOptions = () => {
       videoAdWaitSeconds: Number(videoAdWaitSeconds) * 1000,
     },
     () => {
-      const status = document.getElementById("status") as HTMLElement
-      status.textContent = "Options saved."
+      const status = document.getElementById('status') as HTMLElement
+      status.textContent = 'Options saved.'
       setTimeout(() => {
-        status.innerHTML = "&nbsp;"
+        status.innerHTML = '&nbsp;'
       }, 1000)
     },
   )
@@ -29,17 +29,17 @@ const restoreOptions = () => {
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
       // tslint:disable-next-line:semicolon
       ;(document.getElementById(
-        "normalAdWaitSeconds",
+        'normalAdWaitSeconds',
       ) as HTMLInputElement).value = `${normalAdWaitSeconds / 1000}`
       ;(document.getElementById(
-        "videoAdWaitSeconds",
+        'videoAdWaitSeconds',
       ) as HTMLInputElement).value = `${videoAdWaitSeconds / 1000}`
     },
   )
 }
 
-document.addEventListener("DOMContentLoaded", restoreOptions)
-;(document.getElementById("save") as HTMLElement).addEventListener(
-  "click",
+document.addEventListener('DOMContentLoaded', restoreOptions)
+;(document.getElementById('save') as HTMLElement).addEventListener(
+  'click',
   saveOptions,
 )
