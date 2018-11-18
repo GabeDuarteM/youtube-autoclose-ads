@@ -1,14 +1,16 @@
 language: node_js
-cache: yarn
+cache:
+  directories:
+    - ~/.npm
 node_js:
   - node
   - lts/*
-script: yarn ci
+script: npm run ci
 jobs:
   include:
     - stage: semantic-release
       if: branch = master
       node_js: node
       script:
-        - yarn build
-        - yarn release
+        - npm run build
+        - npm run release
