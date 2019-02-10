@@ -1,3 +1,9 @@
 {
-  "extends": ["config:base", ":preserveSemverRanges"]
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "packageNames": ["@types/chrome", "@types/node"],
+      "automerge": "true"
+    }
+  ]
 }
