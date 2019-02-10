@@ -1,4 +1,4 @@
-const saveOptions = () => {
+const saveOptions = (): void => {
   const normalAdWaitSeconds: string = (document.getElementById(
     'normalAdWaitSeconds',
   ) as HTMLInputElement).value
@@ -20,7 +20,7 @@ const saveOptions = () => {
   )
 }
 
-const restoreOptions = () => {
+const restoreOptions = (): void => {
   chrome.storage.sync.get(
     {
       normalAdWaitSeconds: 5000,

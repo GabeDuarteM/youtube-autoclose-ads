@@ -1,6 +1,6 @@
-let adFound: boolean = false
-let videoAdFound: boolean = false
-let shouldCloseVideoAd: boolean = false
+let adFound = false
+let videoAdFound = false
+let shouldCloseVideoAd = false
 setInterval(() => {
   chrome.storage.sync.get(
     {
