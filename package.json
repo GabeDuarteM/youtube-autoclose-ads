@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/chrome": "0.0.75",
     "@types/node": "10.12.9",
-    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-import": "2.16.0",
     "eslint-plugin-prettier": "3.0.0",
     "gd-scripts": "3.1.4",
     "prettier": "1.15.2",
