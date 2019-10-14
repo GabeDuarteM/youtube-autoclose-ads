@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/GabrielDuarteM/youtube-autoclose-ads#readme",
   "devDependencies": {
-    "@types/chrome": "0.0.89",
+    "@types/chrome": "0.0.90",
     "@types/node": "11.13.9",
     "gd-scripts": "5.0.3",
     "rimraf": "2.6.3",
