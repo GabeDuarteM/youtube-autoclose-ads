@@ -40,6 +40,6 @@
     "gd-scripts": "5.0.9",
     "rimraf": "3.0.1",
     "semantic-release": "17.0.2",
-    "semantic-release-chrome": "1.1.1"
+    "semantic-release-chrome": "1.1.3"
   }
 }
