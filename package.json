@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/chrome": "0.0.93",
     "@types/node": "11.13.9",
-    "gd-scripts": "5.0.3",
+    "gd-scripts": "5.0.9",
     "rimraf": "2.6.3",
     "semantic-release": "15.13.3",
     "semantic-release-chrome": "1.1.1"
