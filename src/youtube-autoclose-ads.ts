@@ -15,7 +15,7 @@ setInterval(() => {
       const videoAdClose: HTMLElement | null = document.querySelector(
         '.ytp-ad-skip-button-container .ytp-ad-skip-button',
       )
-      const videoAdDisplayed: boolean = !!document.querySelector(
+      const videoAdDisplayed = !!document.querySelector(
         '.ytp-ad-skip-button-container',
       )
 
