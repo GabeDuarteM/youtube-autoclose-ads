@@ -3,7 +3,10 @@
   "packageRules": [
     {
       "packageNames": ["@types/chrome", "@types/node"],
-      "automerge": "true"
+      "automerge": "true",
+      "major": {
+        "enabled": true
+      }
     }
   ]
 }
