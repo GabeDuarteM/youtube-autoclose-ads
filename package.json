@@ -38,7 +38,7 @@
     "@types/chrome": "0.0.101",
     "@types/node": "13.9.3",
     "gd-scripts": "5.0.9",
-    "rimraf": "3.0.1",
+    "rimraf": "3.0.2",
     "semantic-release": "17.0.2",
     "semantic-release-chrome": "1.1.3"
   }
