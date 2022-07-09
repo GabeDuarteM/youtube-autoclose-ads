@@ -1,10 +1,10 @@
 const saveOptions = (): void => {
-  const normalAdWaitSeconds: string = (document.getElementById(
-    'normalAdWaitSeconds',
-  ) as HTMLInputElement).value
-  const videoAdWaitSeconds: string = (document.getElementById(
-    'videoAdWaitSeconds',
-  ) as HTMLInputElement).value
+  const normalAdWaitSeconds: string = (
+    document.getElementById('normalAdWaitSeconds') as HTMLInputElement
+  ).value
+  const videoAdWaitSeconds: string = (
+    document.getElementById('videoAdWaitSeconds') as HTMLInputElement
+  ).value
   chrome.storage.sync.set(
     {
       normalAdWaitSeconds: Number(normalAdWaitSeconds) * 1000,
@@ -27,12 +27,12 @@ const restoreOptions = (): void => {
       videoAdWaitSeconds: 5000,
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
-      ;(document.getElementById(
-        'normalAdWaitSeconds',
-      ) as HTMLInputElement).value = `${normalAdWaitSeconds / 1000}`
-      ;(document.getElementById(
-        'videoAdWaitSeconds',
-      ) as HTMLInputElement).value = `${videoAdWaitSeconds / 1000}`
+      ;(
+        document.getElementById('normalAdWaitSeconds') as HTMLInputElement
+      ).value = `${normalAdWaitSeconds / 1000}`
+      ;(
+        document.getElementById('videoAdWaitSeconds') as HTMLInputElement
+      ).value = `${videoAdWaitSeconds / 1000}`
     },
   )
 }
