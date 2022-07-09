@@ -1,6 +1,12 @@
 module.exports = {
   plugins: [
     [
+      '@semantic-release/commit-analyzer',
+      {
+        releaseRules: [{ scope: 'manifest', release: 'patch' }],
+      },
+    ],
+    [
       'semantic-release-chrome',
       {
         extensionId: 'mppjhhbajcciljocgbadbhbgphjfdmhj',
@@ -14,12 +20,4 @@ module.exports = {
       },
     ],
   ],
-  analyzeCommits: {
-    releaseRules: [
-      {
-        scope: 'manifest',
-        release: 'patch',
-      },
-    ],
-  },
 }
