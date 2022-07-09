@@ -54,8 +54,8 @@ MIT
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
-[build-badge]: https://img.shields.io/travis/com/GabrielDuarteM/youtube-autoclose-ads/master.svg?style=flat-square
-[build]: https://travis-ci.com/GabrielDuarteM/youtube-autoclose-ads
+[build-badge]: https://github.com/GabrielDuarteM/youtube-autoclose-ads/workflows/CI/badge.svg
+[build]: https://github.com/GabrielDuarteM/youtube-autoclose-ads/actions
 [version-badge]: https://img.shields.io/chrome-web-store/v/mppjhhbajcciljocgbadbhbgphjfdmhj.svg?style=flat-square
 [package]: https://chrome.google.com/webstore/detail/youtube-autoclose-ads/mppjhhbajcciljocgbadbhbgphjfdmhj
 [downloads-badge]: https://img.shields.io/chrome-web-store/users/mppjhhbajcciljocgbadbhbgphjfdmhj.svg?style=flat-square
