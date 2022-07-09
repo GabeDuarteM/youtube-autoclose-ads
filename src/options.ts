@@ -27,7 +27,6 @@ const restoreOptions = (): void => {
       videoAdWaitSeconds: 5000,
     },
     ({ normalAdWaitSeconds, videoAdWaitSeconds }) => {
-      // tslint:disable-next-line:semicolon
       ;(document.getElementById(
         'normalAdWaitSeconds',
       ) as HTMLInputElement).value = `${normalAdWaitSeconds / 1000}`

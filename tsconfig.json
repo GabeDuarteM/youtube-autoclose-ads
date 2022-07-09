@@ -1,6 +1,23 @@
 {
-  "extends": "./node_modules/gd-scripts/typescript.json",
   "compilerOptions": {
-    "lib": ["esnext", "dom"]
-  }
+    "target": "esnext",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "lib": ["esnext", "dom"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "./node_modules/**/*",
+    "./dist/**/*",
+    "./src/**/*.test.ts",
+    "./src/**/*.test.js"
+  ]
 }
